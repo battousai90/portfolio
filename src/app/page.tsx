@@ -2,6 +2,9 @@ import { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/header";
 import Hero from "./components/hero";
+import About from "./components/about";
+import WorkExperience from "./components/workExperience";
+import Skills from "./components/skills";
 
 export const metadata: Metadata = {
   title: "Gilbert's Portfolio",
@@ -16,17 +19,26 @@ export default function Home() {
       <Header />
 
       {/* Hero */}
-      <section id="hero" className="snap-center">
+      <section id="hero" className="snap-start">
       <Hero />
       </section>
 
       {/* About */}
+      <section id="about" className="snap-center">
+        <About />
+      </section>
 
-      {/* Experiences */}
+      {/* Experience */}
+      <section id="experience" className="snap-center">
+        <WorkExperience />
+      </section>
+      
+      {/* Skills */}
+      <section id="skills" className="snap-center">
+        <Skills />
+      </section>
 
       {/* Projects */}
-
-      {/* Skills */}
 
       {/* Contact Me*/}
 
